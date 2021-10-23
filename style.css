@@ -22,7 +22,7 @@
 .header img,.header span{
     padding:5px;
 }
-@media screen and (max-width:300px)
+@media screen and (max-width:350px)
 {
     .header{
         flex-flow:column nowrap;
@@ -96,8 +96,9 @@ nav{
     border:none;
     border-radius:50px;
     width:100%;
+    transition:border-radius 0.3s;
 }
-.dropdown{
+.nav2 .dropdown{
     position:absolute;
     bottom:40px;
     left:0;
@@ -111,15 +112,16 @@ nav{
     font-size:16px;
     color:black;
     border:1px solid transparent;
-    padding:20px;
+    padding: 10px;
     transition-property:background-color,;
-    transition-duration:0.5s;
-    transition-timing-function:ease-out;
+    transition-duration:0.4s;
+    transition-timing-function:linear;
 }
 .dropdown a:active{
     background-color:#d0d0d0;
 }
 .nav2:hover .dropdown{
+    cursor:pointer;
     display:flex;
     flex-flow:column-reverse nowrap;
     justify-content:center;
@@ -127,6 +129,8 @@ nav{
 .nav2:hover button{
    border-radius:0 0 10px 10px;
 }
+/* ending of button navigation link */
+
 @media screen and (max-width:900px)
 {
     .nav{
